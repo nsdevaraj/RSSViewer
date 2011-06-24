@@ -1,0 +1,34 @@
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx"; 
+
+@font-face
+{
+	fontFamily: Calibri;
+	src: url("/assets/fonts/CALIBRI.TTF");
+	embedAsCFF: true;
+}  
+s|Application{
+	chrome-color:#2d3239;
+	content-background-color:#313235;
+	color:#bdbdbd;
+	fontFamily: Calibri;
+	skin-class:ClassReference('assets.skins.ApplicationSkin');
+	background-color:#2d3540;
+	symbol-color:#ffff00;
+	focus-color:#efefef;
+} 
+s|DataGrid{
+	skin-class:ClassReference('assets.skins.DataGridSkin');
+	roll-over-color:#5a5a5a;
+	selection-color:#3f646b;
+	caret-color:#313235;
+	content-background-alpha:0;
+	border-color:#232323;
+} 
+s|Button{
+	skin-class:ClassReference('assets.skins.ButtonSkin');
+	overSkin:Embed('assets/images/dropdownArrow_over.png');
+	upSkin:Embed('assets/images/dropdownArrow.png');
+	downSkin:Embed('assets/images/dropdownArrow.png');
+	disabledSkin:Embed('assets/images/dropdownArrow_over.png');
+} 
